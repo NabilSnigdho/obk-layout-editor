@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBK Layout Editor</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <main
+      class="mx-auto flex aspect-[4/3] max-h-screen flex-col gap-2 p-2 font-serif"
+    >
+      <div id="kb-layout"></div>
+      <form x-data x-show="$store.main.editKeys === ''">
+        <h2 class="mb-2 text-lg">Edit layout info</h2>
+        <div class="last-2-child-col-span-full grid grid-cols-2 gap-2">
+          <template
+            x-for="path in ['layout.name', 'layout.version', 'layout.developer.name']"
+          >
+            <div x-id="['text-input']" class="relative">
+              <input
+                type="text"
+                :id="$id('text-input')"
+                class="text-input peer"
+                placeholder=" "
+                x-model="$getLastParent($store.main.content.info, path)[$getLastSegment(path)]"
+              />
+              <label
+                :for="$id('text-input')"
+                x-text="$getLabel(path)"
+                class="floating-label"
+              ></label>
+            </div>
+          </template>
+          <div x-id="['text-input']" class="relative">
+            <textarea
+              x-id="['text-input']"
+              class="text-input peer"
+              placeholder=" "
+              x-model="$store.main.content.info.layout.developer.comment"
+              rows="3"
+            ></textarea>
+            <label :for="$id('text-input')" class="floating-label">
+              Developer's comment
+            </label>
+          </div>
+        </div>
+      </form>
+      <form x-data x-cloak x-show="$store.main.editKeys !== ''">
+        <h2 class="mb-2 flex items-stretch text-lg">
+          <span class="me-auto">Edit layout key</span>
+          <button
+            type="button"
+            @click="$store.main.editKeys = ''"
+            class="rounded border border-gray-300 bg-white px-5 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200"
+          >
+            Back to Edit layout info
+          </button>
+        </h2>
+        <div class="grid grid-cols-4 gap-2">
+          <template
+            x-for="[label, key] in $getEditKeyVariants($store.main.editKeys)"
+            :key="key"
+          >
+            <div class="relative" x-id="['text-input']">
+              <input
+                type="text"
+                :id="$id('text-input')"
+                class="text-input peer"
+                placeholder=" "
+                x-model="$store.main.content.layout[key]"
+              />
+              <label
+                :for="$id('text-input')"
+                x-text="label"
+                class="floating-label"
+              ></label>
+            </div>
+          </template>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
