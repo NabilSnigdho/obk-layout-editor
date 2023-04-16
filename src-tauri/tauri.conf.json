@@ -1,0 +1,79 @@
+{
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "obk-layout-editor",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "fs": {
+        "readFile": true,
+        "writeFile": true,
+        "exists": true
+      },
+      "dialog": {
+        "all": true
+      },
+      "path": {
+        "all": true
+      },
+      "window": {
+        "setTitle": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "Utility",
+      "copyright": "GPL 3",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.obk.layout.editor",
+      "longDescription": "Utility to create/edit OpenBangla Keyboard layout files.",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "OBK Layout Editor",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 640,
+        "resizable": true,
+        "title": "OBK Layout Editor",
+        "width": 800
+      }
+    ]
+  }
+}

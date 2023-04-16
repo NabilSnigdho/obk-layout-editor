@@ -1,0 +1,289 @@
+<svg id="qwerty-layout" class="interactive-mode" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 200"
+  width="1800px" height="600px">
+  <style>
+    svg.interactive-mode#qwerty-layout {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    svg.interactive-mode#qwerty-layout g#editable-keys>rect {
+      cursor: pointer;
+      transition: fill 300ms;
+    }
+
+    svg.interactive-mode#qwerty-layout g#editable-keys>rect:hover {
+      fill: #dbffe7;
+    }
+
+    svg.interactive-mode#qwerty-layout g#editable-keys>rect.active {
+      fill: #ffffd6;
+    }
+
+    svg.interactive-mode#qwerty-layout text {
+      pointer-events: none;
+    }
+
+    svg#qwerty-layout .joiner {
+      fill: #002fa7;
+    }
+
+    svg.interactive-mode#qwerty-layout #alt-gr-key {
+      fill: #eceff1;
+    }
+
+    svg.alt-gr-mode#qwerty-layout #alt-gr-key,
+    svg.interactive-mode#qwerty-layout #alt-gr-key:hover {
+      fill: #dbedff;
+    }
+  </style>
+  <g stroke="#000000">
+    <g id="other-keys" fill="#cfd8dc">
+      <rect width="80" height="40" x="520" y="0"></rect>
+      <rect width="60" height="40" x="0" y="40"></rect>
+      <rect width="70" height="40" x="0" y="80"></rect>
+      <rect width="90" height="40" x="510" y="80"></rect>
+      <rect width="90" height="40" x="0" y="120"></rect>
+      <rect width="110" height="40" x="490" y="120"></rect>
+      <rect width="60" height="40" x="0" y="160"></rect>
+      <rect width="40" height="40" x="60" y="160"></rect>
+      <rect width="60" height="40" x="100" y="160"></rect>
+      <rect width="240" height="40" x="160" y="160"></rect>
+      <rect width="60" height="40" x="400" y="160" id="alt-gr-key"></rect>
+      <rect width="40" height="40" x="460" y="160"></rect>
+      <rect width="40" height="40" x="500" y="160"></rect>
+      <rect width="60" height="40" x="540" y="160"></rect>
+    </g>
+    <g id="editable-keys" fill="#eceff1">
+      <rect width="40" height="40" x="0" y="0" data-keys="Grave Tilde"></rect>
+      <rect width="40" height="40" x="40" y="0" data-keys="1 Exclaim"></rect>
+      <rect width="40" height="40" x="80" y="0" data-keys="2 At"></rect>
+      <rect width="40" height="40" x="120" y="0" data-keys="3 Hash"></rect>
+      <rect width="40" height="40" x="160" y="0" data-keys="4 Dollar"></rect>
+      <rect width="40" height="40" x="200" y="0" data-keys="5 Percent"></rect>
+      <rect width="40" height="40" x="240" y="0" data-keys="6 Circum"></rect>
+      <rect width="40" height="40" x="280" y="0" data-keys="7 Ampersand"></rect>
+      <rect width="40" height="40" x="320" y="0" data-keys="8 Asterisk"></rect>
+      <rect width="40" height="40" x="360" y="0" data-keys="9 ParenLeft"></rect>
+      <rect width="40" height="40" x="400" y="0" data-keys="0 ParenRight"></rect>
+      <rect width="40" height="40" x="440" y="0" data-keys="Minus UnderScore"></rect>
+      <rect width="40" height="40" x="480" y="0" data-keys="Equals Plus"></rect>
+      <rect width="40" height="40" x="60" y="40" data-keys="q Q"></rect>
+      <rect width="40" height="40" x="100" y="40" data-keys="w W"></rect>
+      <rect width="40" height="40" x="140" y="40" data-keys="e E"></rect>
+      <rect width="40" height="40" x="180" y="40" data-keys="r R"></rect>
+      <rect width="40" height="40" x="220" y="40" data-keys="t T"></rect>
+      <rect width="40" height="40" x="260" y="40" data-keys="y Y"></rect>
+      <rect width="40" height="40" x="300" y="40" data-keys="u U"></rect>
+      <rect width="40" height="40" x="340" y="40" data-keys="i I"></rect>
+      <rect width="40" height="40" x="380" y="40" data-keys="o O"></rect>
+      <rect width="40" height="40" x="420" y="40" data-keys="p P"></rect>
+      <rect width="40" height="40" x="460" y="40" data-keys="BracketLeft BraceLeft"></rect>
+      <rect width="40" height="40" x="500" y="40" data-keys="BracketRight BraceRight"></rect>
+      <rect width="60" height="40" x="540" y="40" data-keys="BackSlash Bar"></rect>
+      <rect width="40" height="40" x="70" y="80" data-keys="a A"></rect>
+      <rect width="40" height="40" x="110" y="80" data-keys="s S"></rect>
+      <rect width="40" height="40" x="150" y="80" data-keys="d D"></rect>
+      <rect width="40" height="40" x="190" y="80" data-keys="f F"></rect>
+      <rect width="40" height="40" x="230" y="80" data-keys="g G"></rect>
+      <rect width="40" height="40" x="270" y="80" data-keys="h H"></rect>
+      <rect width="40" height="40" x="310" y="80" data-keys="j J"></rect>
+      <rect width="40" height="40" x="350" y="80" data-keys="k K"></rect>
+      <rect width="40" height="40" x="390" y="80" data-keys="l L"></rect>
+      <rect width="40" height="40" x="430" y="80" data-keys="Semicolon Colon"></rect>
+      <rect width="40" height="40" x="470" y="80" data-keys="Apostrophe Quote"></rect>
+      <rect width="40" height="40" x="90" y="120" data-keys="z Z"></rect>
+      <rect width="40" height="40" x="130" y="120" data-keys="x X"></rect>
+      <rect width="40" height="40" x="170" y="120" data-keys="c C"></rect>
+      <rect width="40" height="40" x="210" y="120" data-keys="v V"></rect>
+      <rect width="40" height="40" x="250" y="120" data-keys="b B"></rect>
+      <rect width="40" height="40" x="290" y="120" data-keys="n N"></rect>
+      <rect width="40" height="40" x="330" y="120" data-keys="m M"></rect>
+      <rect width="40" height="40" x="370" y="120" data-keys="Comma Less"></rect>
+      <rect width="40" height="40" x="410" y="120" data-keys="Period Greater"></rect>
+      <rect width="40" height="40" x="450" y="120" data-keys="Slash Question"></rect>
+    </g>
+  </g>
+  <g text-anchor="middle" font-size="12" font-family="Kalpurush, serif">
+    <g>
+      <text dy="0.25em" x="10" y="30">`</text>
+      <text dy="0.25em" x="10" y="10">~</text>
+      <text dy="0.25em" x="50" y="30">1</text>
+      <text dy="0.25em" x="50" y="10">!</text>
+      <text dy="0.25em" x="90" y="30">2</text>
+      <text dy="0.25em" x="90" y="10">@</text>
+      <text dy="0.25em" x="130" y="30">3</text>
+      <text dy="0.25em" x="130" y="10">#</text>
+      <text dy="0.25em" x="170" y="30">4</text>
+      <text dy="0.25em" x="170" y="10">$</text>
+      <text dy="0.25em" x="210" y="30">5</text>
+      <text dy="0.25em" x="210" y="10">%</text>
+      <text dy="0.25em" x="250" y="30">6</text>
+      <text dy="0.25em" x="250" y="10">^</text>
+      <text dy="0.25em" x="290" y="30">7</text>
+      <text dy="0.25em" x="290" y="10">&amp;</text>
+      <text dy="0.25em" x="330" y="30">8</text>
+      <text dy="0.25em" x="330" y="10">*</text>
+      <text dy="0.25em" x="370" y="30">9</text>
+      <text dy="0.25em" x="370" y="10">(</text>
+      <text dy="0.25em" x="410" y="30">0</text>
+      <text dy="0.25em" x="410" y="10">)</text>
+      <text dy="0.25em" x="450" y="30">-</text>
+      <text dy="0.25em" x="450" y="10">_</text>
+      <text dy="0.25em" x="490" y="30">=</text>
+      <text dy="0.25em" x="490" y="10">+</text>
+      <text dy="0.25em" x="70" y="50">Q</text>
+      <text dy="0.25em" x="110" y="50">W</text>
+      <text dy="0.25em" x="150" y="50">E</text>
+      <text dy="0.25em" x="190" y="50">R</text>
+      <text dy="0.25em" x="230" y="50">T</text>
+      <text dy="0.25em" x="270" y="50">Y</text>
+      <text dy="0.25em" x="310" y="50">U</text>
+      <text dy="0.25em" x="350" y="50">I</text>
+      <text dy="0.25em" x="390" y="50">O</text>
+      <text dy="0.25em" x="430" y="50">P</text>
+      <text dy="0.25em" x="470" y="70">[</text>
+      <text dy="0.25em" x="470" y="50">{</text>
+      <text dy="0.25em" x="510" y="70">]</text>
+      <text dy="0.25em" x="510" y="50">}</text>
+      <text dy="0.25em" x="555" y="70">\</text>
+      <text dy="0.25em" x="555" y="50">|</text>
+      <text dy="0.25em" x="80" y="90">A</text>
+      <text dy="0.25em" x="120" y="90">S</text>
+      <text dy="0.25em" x="160" y="90">D</text>
+      <text dy="0.25em" x="200" y="90">F</text>
+      <text dy="0.25em" x="240" y="90">G</text>
+      <text dy="0.25em" x="280" y="90">H</text>
+      <text dy="0.25em" x="320" y="90">J</text>
+      <text dy="0.25em" x="360" y="90">K</text>
+      <text dy="0.25em" x="400" y="90">L</text>
+      <text dy="0.25em" x="440" y="110">;</text>
+      <text dy="0.25em" x="440" y="90">:</text>
+      <text dy="0.25em" x="480" y="110">'</text>
+      <text dy="0.25em" x="480" y="90">"</text>
+      <text dy="0.25em" x="100" y="130">Z</text>
+      <text dy="0.25em" x="140" y="130">X</text>
+      <text dy="0.25em" x="180" y="130">C</text>
+      <text dy="0.25em" x="220" y="130">V</text>
+      <text dy="0.25em" x="260" y="130">B</text>
+      <text dy="0.25em" x="300" y="130">N</text>
+      <text dy="0.25em" x="340" y="130">M</text>
+      <text dy="0.25em" x="380" y="150">,</text>
+      <text dy="0.25em" x="380" y="130">&lt;</text>
+      <text dy="0.25em" x="420" y="150">.</text>
+      <text dy="0.25em" x="420" y="130">&gt;</text>
+      <text dy="0.25em" x="460" y="150">/</text>
+      <text dy="0.25em" x="460" y="130">?</text>
+      <text dy="0.25em" x="130" y="180">Alt</text>
+      <text dy="0.25em" x="430" y="180">Alt Gr</text>
+    </g>
+    <g text-anchor="start">
+      <text dy="0.25em" x="7" y="60">Tab</text>
+      <text dy="0.25em" x="7" y="100">Caps Lock</text>
+      <text dy="0.25em" x="7" y="140">Shift</text>
+      <text dy="0.25em" x="7" y="180">Ctrl</text>
+    </g>
+    <g text-anchor="end">
+      <text dy="0.25em" x="593" y="20">Backspace</text>
+      <text dy="0.25em" x="593" y="100">Enter</text>
+      <text dy="0.25em" x="593" y="140">Shift</text>
+      <text dy="0.25em" x="593" y="180">Ctrl</text>
+    </g>
+    <g id="key-labels" fill="#b22222">
+      <text dy="0.25em" x="30" y="30" data-key="Grave"></text>
+      <text dy="0.25em" x="30" y="10" data-key="Tilde"></text>
+      <text dy="0.25em" x="70" y="30" data-key="1"></text>
+      <text dy="0.25em" x="70" y="10" data-key="Exclaim"></text>
+      <text dy="0.25em" x="110" y="30" data-key="2"></text>
+      <text dy="0.25em" x="110" y="10" data-key="At"></text>
+      <text dy="0.25em" x="150" y="30" data-key="3"></text>
+      <text dy="0.25em" x="150" y="10" data-key="Hash"></text>
+      <text dy="0.25em" x="190" y="30" data-key="4"></text>
+      <text dy="0.25em" x="190" y="10" data-key="Dollar"></text>
+      <text dy="0.25em" x="230" y="30" data-key="5"></text>
+      <text dy="0.25em" x="230" y="10" data-key="Percent"></text>
+      <text dy="0.25em" x="270" y="30" data-key="6"></text>
+      <text dy="0.25em" x="270" y="10" data-key="Circum"></text>
+      <text dy="0.25em" x="310" y="30" data-key="7"></text>
+      <text dy="0.25em" x="310" y="10" data-key="Ampersand"></text>
+      <text dy="0.25em" x="350" y="30" data-key="8"></text>
+      <text dy="0.25em" x="350" y="10" data-key="Asterisk"></text>
+      <text dy="0.25em" x="390" y="30" data-key="9"></text>
+      <text dy="0.25em" x="390" y="10" data-key="ParenLeft"></text>
+      <text dy="0.25em" x="430" y="30" data-key="0"></text>
+      <text dy="0.25em" x="430" y="10" data-key="ParenRight"></text>
+      <text dy="0.25em" x="470" y="30" data-key="Minus"></text>
+      <text dy="0.25em" x="470" y="10" data-key="UnderScore"></text>
+      <text dy="0.25em" x="510" y="30" data-key="Equals"></text>
+      <text dy="0.25em" x="510" y="10" data-key="Plus"></text>
+      <text dy="0.25em" x="90" y="70" data-key="q"></text>
+      <text dy="0.25em" x="90" y="50" data-key="Q"></text>
+      <text dy="0.25em" x="130" y="70" data-key="w"></text>
+      <text dy="0.25em" x="130" y="50" data-key="W"></text>
+      <text dy="0.25em" x="170" y="70" data-key="e"></text>
+      <text dy="0.25em" x="170" y="50" data-key="E"></text>
+      <text dy="0.25em" x="210" y="70" data-key="r"></text>
+      <text dy="0.25em" x="210" y="50" data-key="R"></text>
+      <text dy="0.25em" x="250" y="70" data-key="t"></text>
+      <text dy="0.25em" x="250" y="50" data-key="T"></text>
+      <text dy="0.25em" x="290" y="70" data-key="y"></text>
+      <text dy="0.25em" x="290" y="50" data-key="Y"></text>
+      <text dy="0.25em" x="330" y="70" data-key="u"></text>
+      <text dy="0.25em" x="330" y="50" data-key="U"></text>
+      <text dy="0.25em" x="370" y="70" data-key="i"></text>
+      <text dy="0.25em" x="370" y="50" data-key="I"></text>
+      <text dy="0.25em" x="410" y="70" data-key="o"></text>
+      <text dy="0.25em" x="410" y="50" data-key="O"></text>
+      <text dy="0.25em" x="450" y="70" data-key="p"></text>
+      <text dy="0.25em" x="450" y="50" data-key="P"></text>
+      <text dy="0.25em" x="490" y="70" data-key="BracketLeft"></text>
+      <text dy="0.25em" x="490" y="50" data-key="BraceLeft"></text>
+      <text dy="0.25em" x="530" y="70" data-key="BracketRight"></text>
+      <text dy="0.25em" x="530" y="50" data-key="BraceRight"></text>
+      <text dy="0.25em" x="585" y="70" data-key="BackSlash"></text>
+      <text dy="0.25em" x="585" y="50" data-key="Bar"></text>
+      <text dy="0.25em" x="100" y="110" data-key="a"></text>
+      <text dy="0.25em" x="100" y="90" data-key="A"></text>
+      <text dy="0.25em" x="140" y="110" data-key="s"></text>
+      <text dy="0.25em" x="140" y="90" data-key="S"></text>
+      <text dy="0.25em" x="180" y="110" data-key="d"></text>
+      <text dy="0.25em" x="180" y="90" data-key="D"></text>
+      <text dy="0.25em" x="220" y="110" data-key="f"></text>
+      <text dy="0.25em" x="220" y="90" data-key="F"></text>
+      <text dy="0.25em" x="260" y="110" data-key="g"></text>
+      <text dy="0.25em" x="260" y="90" data-key="G"></text>
+      <text dy="0.25em" x="300" y="110" data-key="h"></text>
+      <text dy="0.25em" x="300" y="90" data-key="H"></text>
+      <text dy="0.25em" x="340" y="110" data-key="j"></text>
+      <text dy="0.25em" x="340" y="90" data-key="J"></text>
+      <text dy="0.25em" x="380" y="110" data-key="k"></text>
+      <text dy="0.25em" x="380" y="90" data-key="K"></text>
+      <text dy="0.25em" x="420" y="110" data-key="l"></text>
+      <text dy="0.25em" x="420" y="90" data-key="L"></text>
+      <text dy="0.25em" x="460" y="110" data-key="Semicolon"></text>
+      <text dy="0.25em" x="460" y="90" data-key="Colon"></text>
+      <text dy="0.25em" x="500" y="110" data-key="Apostrophe"></text>
+      <text dy="0.25em" x="500" y="90" data-key="Quote"></text>
+      <text dy="0.25em" x="120" y="150" data-key="z"></text>
+      <text dy="0.25em" x="120" y="130" data-key="Z"></text>
+      <text dy="0.25em" x="160" y="150" data-key="x"></text>
+      <text dy="0.25em" x="160" y="130" data-key="X"></text>
+      <text dy="0.25em" x="200" y="150" data-key="c"></text>
+      <text dy="0.25em" x="200" y="130" data-key="C"></text>
+      <text dy="0.25em" x="240" y="150" data-key="v"></text>
+      <text dy="0.25em" x="240" y="130" data-key="V"></text>
+      <text dy="0.25em" x="280" y="150" data-key="b"></text>
+      <text dy="0.25em" x="280" y="130" data-key="B"></text>
+      <text dy="0.25em" x="320" y="150" data-key="n"></text>
+      <text dy="0.25em" x="320" y="130" data-key="N"></text>
+      <text dy="0.25em" x="360" y="150" data-key="m"></text>
+      <text dy="0.25em" x="360" y="130" data-key="M"></text>
+      <text dy="0.25em" x="400" y="150" data-key="Comma"></text>
+      <text dy="0.25em" x="400" y="130" data-key="Less"></text>
+      <text dy="0.25em" x="440" y="150" data-key="Period"></text>
+      <text dy="0.25em" x="440" y="130" data-key="Greater"></text>
+      <text dy="0.25em" x="480" y="150" data-key="Slash"></text>
+      <text dy="0.25em" x="480" y="130" data-key="Question"></text>
+    </g>
+  </g>
+</svg>
