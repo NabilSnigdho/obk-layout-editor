@@ -82,6 +82,7 @@ export const initFileManagement = () => {
           drawLayout(draw, content.layout, 'AltGr')
           content.info.layout.image1 = await convert_svg(draw.svg(true))
           draw.addClass('interactive-mode')
+          drawLayout(draw, content.layout, store.previewMode)
 
           await writeTextFile(filePath, stringify(content, { space: '  ' }))
         }
