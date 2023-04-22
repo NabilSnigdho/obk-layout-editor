@@ -2,6 +2,8 @@
 
 Utility to create/edit OpenBangla Keyboard layout files.
 
+![sample screenshot](https://github.com/NabilSnigdho/obk-layout-editor/blob/main/screenshots/avro_easy.jpg?raw=true)
+
 ## Development
 
 ### Recommended IDE Setup
