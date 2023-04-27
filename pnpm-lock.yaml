@@ -10,6 +10,9 @@ dependencies:
   alpinejs:
     specifier: ^3.12.0
     version: 3.12.0
+  hotkeys-js:
+    specifier: ^3.10.2
+    version: 3.10.2
   json-stable-stringify:
     specifier: ^1.0.2
     version: 1.0.2
@@ -1492,6 +1495,10 @@ packages:
     resolution: {integrity: sha512-xyD4XgslstNAs72ENaoFvgMwtv8xhiDtC2AtzCG+8yF7W/Knxxm9BX+e2s25mm+HxMKh0rBmXVOEGF3zNImXvA==}
     dependencies:
       traverse: 0.6.7
+    dev: false
+
+  /hotkeys-js@3.10.2:
+    resolution: {integrity: sha512-Z6vLmJTYzkbZZXlBkhrYB962Q/rZGc/WHQiyEGu9ZZVF7bAeFDjjDa31grWREuw9Ygb4zmlov2bTkPYqj0aFnQ==}
     dev: false
 
   /human-signals@2.1.0:
