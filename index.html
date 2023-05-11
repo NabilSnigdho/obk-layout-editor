@@ -9,46 +9,55 @@
 
   <body>
     <main
-      class="mx-auto flex aspect-[4/3] max-h-screen flex-col gap-2 p-2 font-serif"
+      class="mx-auto flex min-h-screen max-w-[calc(400vh/3)] flex-col gap-2 bg-gray-200 p-2 font-serif"
     >
-      <div id="kb-layout"></div>
-      <form x-data x-show="$store.main.editKeys === ''">
-        <h2 class="mb-2 text-lg">Edit layout info</h2>
-        <div class="last-2-child-col-span-full grid grid-cols-2 gap-2">
-          <template
-            x-for="path in ['layout.name', 'layout.version', 'layout.developer.name']"
-          >
-            <div x-id="['text-input']" class="relative">
-              <input
-                type="text"
-                :id="$id('text-input')"
-                class="text-input peer"
-                placeholder=" "
-                x-model="$getLastParent($store.main.content.info, path)[$getLastSegment(path)]"
-              />
-              <label
-                :for="$id('text-input')"
-                x-text="$getLabel(path)"
-                class="floating-label"
-              ></label>
-            </div>
-          </template>
-          <div x-id="['text-input']" class="relative">
-            <textarea
-              x-id="['text-input']"
+      <div id="kb-layout">
+        <svg width="900px" height="300px" class="block h-auto w-full"></svg>
+      </div>
+      <form
+        x-data
+        x-show="$store.main.editKeys === ''"
+        class="grid flex-grow grid-cols-3 content-start gap-2 bg-white p-5 md:grid-rows-[repeat(3,auto)1fr]"
+      >
+        <h2 class="col-span-full font-sans text-2xl">Edit layout info</h2>
+        <template
+          x-for="[path, cc] in [['layout.name', 'md:col-span-2'], ['layout.version', 'md:col-span-1'], ['layout.developer.name']]"
+        >
+          <div x-id="['text-input']" class="relative col-span-full" :class="cc">
+            <input
+              type="text"
+              :id="$id('text-input')"
               class="text-input peer"
               placeholder=" "
-              x-model="$store.main.content.info.layout.developer.comment"
-              rows="3"
-            ></textarea>
-            <label :for="$id('text-input')" class="floating-label">
-              Developer's comment
-            </label>
+              x-model="$getLastParent($store.main.content.info, path)[$getLastSegment(path)]"
+            />
+            <label
+              :for="$id('text-input')"
+              x-text="$getLabel(path)"
+              class="floating-label top-4"
+            ></label>
           </div>
+        </template>
+        <div x-id="['text-input']" class="relative col-span-full">
+          <textarea
+            x-id="['text-input']"
+            class="text-input peer h-full"
+            placeholder=" "
+            x-model="$store.main.content.info.layout.developer.comment"
+            rows="2"
+          ></textarea>
+          <label :for="$id('text-input')" class="floating-label">
+            Developer's comment
+          </label>
         </div>
       </form>
-      <form x-data x-cloak x-show="$store.main.editKeys !== ''">
-        <h2 class="mb-2 flex items-stretch text-lg">
+      <form
+        x-data
+        x-cloak
+        x-show="$store.main.editKeys !== ''"
+        class="flex-grow content-start bg-white p-5"
+      >
+        <h2 class="mb-2 flex items-stretch font-sans text-2xl">
           <span class="me-auto">Edit layout key</span>
           <button
             type="button"
